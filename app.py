@@ -2,6 +2,7 @@ import openai
 import json
 import requests
 import streamlit as st
+import os
 
 
 openai.api_key="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"
