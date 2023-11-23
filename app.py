@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 
 #load_dotenv()
-openai.api_key= st.secrets.key  #os.getenv("openai_api_key")
+openai.api_key= st.secrets.openai_api #os.getenv("openai_api_key")
 
 def BasicGeneration(userPrompt):
     completion= openai.ChatCompletion.create(
