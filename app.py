@@ -5,8 +5,8 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-openai.api_key=os.getenv("openai_api_key")
+#load_dotenv()
+openai.api_key= st.secrets  #os.getenv("openai_api_key")
 
 def BasicGeneration(userPrompt):
     completion= openai.ChatCompletion.create(
