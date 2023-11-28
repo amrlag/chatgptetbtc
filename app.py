@@ -7,7 +7,7 @@ import os
 
 #load_dotenv()
 #openai.api_key= st.secrets.openaiDetails.openai_api #os.getenv("openai_api_key")
-openai.api_key = st.secrets["openai_apikey"]
+openai.api_key = st.secrets.openaiDetails.openai_apikey
 
 
 def BasicGeneration(userPrompt):
