@@ -13,7 +13,7 @@ import os
 
 #openai.api_key = st.secrets.openaiDetails.openai_apikey
 
-openai.api_key = st.secrets["openai_api"]
+openai.api_key = st.secrets["openai_apikey"]
 
 
 def BasicGeneration(userPrompt):
