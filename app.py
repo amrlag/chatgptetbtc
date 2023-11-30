@@ -81,6 +81,7 @@ def AnalyzeBitCoin(bitcoinPrices):
         )
         message = completion.choices[0].message.content.strip()
     except Exception as e:
+        print(f"Error: {e}")
         message = "Sorry, I was not able to process your request at this time. Please try again later."
     return message
 
